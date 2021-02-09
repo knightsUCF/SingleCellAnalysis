@@ -44,6 +44,26 @@ plot(plot2)
 ![](https://github.com/knightsUCF/SingleCellAnalysis/blob/main/images/ScatterCountvsFeature.png)
 
 
+<h3>Identifying Highly Variable Features</h3>
+
+```R
+# remove unwanted cells
+pbmc <- subset(pbmc, subset = nFeature_RNA > 200 & nFeature_RNA < 4000 & percent.mt < 5)
+
+# normalize the rest
+pbmc <- NormalizeData(pbmc, normalization.method = "LogNormalize", scale.factor = 10000)
+
+
+pbmc <- FindVariableFeatures(pbmc, selection.method = "vst", nfeatures = 2000)
+
+# Identify the 10 most highly variable genes
+top10 <- head(VariableFeatures(pbmc), 10)
+
+# plot variable features with and without labels
+plot3 <- VariableFeaturePlot(pbmc)
+plot4 <- LabelPoints(plot = plot1, points = top10, repel = TRUE)
+plot(plot3 + plot4)
+```
 
 
 
