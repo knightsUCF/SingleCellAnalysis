@@ -107,5 +107,15 @@ plot(DimPlot(pbmc, reduction = "pca"))
 
 ![](https://github.com/knightsUCF/SingleCellAnalysis/blob/main/images/pca.png)
 
+<h3>Dimensionality</h3>
+
+```R
+pbmc <- JackStraw(pbmc, num.replicate = 100)
+pbmc <- ScoreJackStraw(pbmc, dims = 1:20)
+
+plot(JackStrawPlot(pbmc, dims = 1:15))
+```
+
+
 
 
