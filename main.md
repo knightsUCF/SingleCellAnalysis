@@ -161,3 +161,5 @@ pbmc <- RunUMAP(pbmc, dims = 1:10)
 plot(DimPlot(pbmc, reduction = "umap"))
 ```
 
+![](https://github.com/knightsUCF/SingleCellAnalysis/blob/main/images/UMAP.png)
+
