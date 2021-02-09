@@ -69,5 +69,38 @@ plot(plot3 + plot4)
 
 
 
+<h3>Scaling the Data</h3>
+
+```R
+all.genes <- rownames(pbmc)
+pbmc <- ScaleData(pbmc, features = all.genes)
+```
+
+<h3>Dimensional reduction</h3>
+
+```R
+pbmc <- RunPCA(pbmc, features = VariableFeatures(object = pbmc))
+# Examine and visualize PCA results a few different ways
+print(pbmc[["pca"]], dims = 1:5, nfeatures = 5)
+
+output:
+
+PC_ 1 
+Positive:  Crip2, Tm4sf1, Hspb1, Cavin3, Pcp4l1 
+Negative:  Ctss, Fcgr3, Cotl1, Cd68, Gm49339 
+PC_ 2 
+Positive:  Esam, Ly6c1, Egfl7, Flt1, Eng 
+Negative:  Mt3, Clu, Gfap, Chchd10, Rsph1 
+PC_ 3 
+Positive:  C1qa, C1qc, Cx3cr1, Ly86, Cd81 
+Negative:  S100a6, Thbs1, S100a10, Lgals3, Crip1 
+PC_ 4 
+Positive:  Cspg5, Dlgap1, Gm3764, C1ql1, Ptprz1 
+Negative:  Ccdc153, Ccdc113, 1110017D15Rik, Rsph9, Tmem212 
+PC_ 5 
+Positive:  Cspg5, C1ql1, Olig1, Tmod2, Dlgap1 
+Negative:  Pcolce, Bgn, Smoc2, Gpc3, Fbln1 
+```
+
 
 
