@@ -217,3 +217,13 @@ output
 10 8.27e-42       4.50 0.875 0.095  1.04e-37 4       Clu 
 
 ```
+
+
+```R
+# Seurat has several tests for differential expression which can be set with the test.use parameter (see our DE vignette for details). For example, the ROC test returns the ‘classification power’ for any individual marker (ranging from 0 - random, to 1 - perfect).
+
+cluster1.markers <- FindMarkers(pbmc, ident.1 = 0, logfc.threshold = 0.25, test.use = "roc", only.pos = TRUE)
+plot(VlnPlot(pbmc, features = c("Esam", "Tm4sf1")))
+```
+
+
