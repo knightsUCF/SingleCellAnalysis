@@ -194,3 +194,26 @@ IFITM3 2.500844e-199   3.892661 0.975 0.046 3.429657e-195
 CFD    1.763722e-195   3.408196 0.938 0.037 2.418768e-191
 ```
 
+```R
+# find markers for every cluster compared to all remaining cells, report only the positive ones
+pbmc.markers <- FindAllMarkers(pbmc, only.pos = TRUE, min.pct = 0.25, logfc.threshold = 0.25)
+print(pbmc.markers %>% group_by(cluster) %>% top_n(n = 2, wt =
+
+output
+
+# A tibble: 10 x 7
+# Groups:   cluster [5]
+      p_val avg_log2FC pct.1 pct.2 p_val_adj cluster gene  
+      <dbl>      <dbl> <dbl> <dbl>     <dbl> <fct>   <chr> 
+ 1 5.90e-50       4.70 0.992 0.547  7.42e-46 0       Lyz2  
+ 2 1.18e-40       4.91 0.84  0.218  1.48e-36 0       Arg1  
+ 3 6.00e- 8       1.46 0.97  0.957  7.56e- 4 1       Cst3  
+ 4 1.53e- 4       1.34 0.642 0.48   1.00e+ 0 1       Ccl12 
+ 5 3.38e-42       5.62 0.967 0.229  4.25e-38 2       Ly6a  
+ 6 4.51e-40       5.58 1     0.338  5.68e-36 2       Igfbp7
+ 7 1.75e-26       2.96 1     0.439  2.21e-22 3       Ccl3  
+ 8 2.54e-22       3.21 1     0.599  3.20e-18 3       Ccl4  
+ 9 1.38e-55       4.70 0.958 0.057  1.74e-51 4       Mt3   
+10 8.27e-42       4.50 0.875 0.095  1.04e-37 4       Clu 
+
+```
