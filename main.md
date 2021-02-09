@@ -180,3 +180,17 @@ Vwa1    5.332391e-56   3.521792 0.900 0.046 6.712414e-52
 Egfl7   5.689981e-56   3.957891 0.983 0.092 7.162548e-52
 ```
 
+
+```R
+# find all markers distinguishing cluster 3 from clusters 0 and 3
+cluster3.markers <- FindMarkers(pbmc, ident.1 = 3, ident.2 = c(0, 3), min.pct = 0.25) # last 3 here does not denote clusters but the dimensions of data
+print(head(cluster5.markers, n = 3))
+
+output
+
+               p_val avg_log2FC pct.1 pct.2     p_val_adj
+FCGR3A 7.583625e-209   4.274913 0.975 0.037 1.040018e-204
+IFITM3 2.500844e-199   3.892661 0.975 0.046 3.429657e-195
+CFD    1.763722e-195   3.408196 0.938 0.037 2.418768e-191
+```
+
