@@ -228,5 +228,7 @@ plot(VlnPlot(pbmc, features = c("Esam", "Tm4sf1")))
 
 ![](https://github.com/knightsUCF/SingleCellAnalysis/blob/main/images/ClusterExpression.png)
 
-
-
+```R
+# we can plot raw counts as well
+plot(VlnPlot(pbmc, features = c("Esam", "Tm4sf1"), slot = "counts", log = TRUE))
+```
