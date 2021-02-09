@@ -151,3 +151,13 @@ Maximum modularity in 10 random starts: 0.8660
 Number of communities: 5
 ```
 
+<h3>Non-linear Dimensional Reduction (UMAP)</h3>
+
+```R
+pbmc <- RunUMAP(pbmc, dims = 1:10)
+
+# note that we can set `label = TRUE` or use the LabelClusters function to help label
+# individual clusters
+plot(DimPlot(pbmc, reduction = "umap"))
+```
+
