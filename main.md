@@ -247,4 +247,6 @@ top10 <- pbmc.markers %>% group_by(cluster) %>% top_n(n = 10, wt = avg_log2FC)
 plot(DoHeatmap(pbmc, features = top10$gene) + NoLegend())
 ```
 
+![](https://github.com/knightsUCF/SingleCellAnalysis/blob/main/images/Heatmap.png)
+
 
