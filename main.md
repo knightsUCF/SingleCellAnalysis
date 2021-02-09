@@ -99,7 +99,10 @@ Positive:  Cspg5, Dlgap1, Gm3764, C1ql1, Ptprz1
 Negative:  Ccdc153, Ccdc113, 1110017D15Rik, Rsph9, Tmem212 
 PC_ 5 
 Positive:  Cspg5, C1ql1, Olig1, Tmod2, Dlgap1 
-Negative:  Pcolce, Bgn, Smoc2, Gpc3, Fbln1 
+Negative:  Pcolce, Bgn, Smoc2, Gpc3, Fbln1
+
+
+plot(DimPlot(pbmc, reduction = "pca"))
 ```
 
 
