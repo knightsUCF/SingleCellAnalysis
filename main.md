@@ -10,7 +10,6 @@ https://www.biorxiv.org/content/10.1101/2020.05.13.094854v1
 <h3>Processing Data</h3>
 
 ```R
-
 library(dplyr)
 library(Seurat)
 library(patchwork)
@@ -25,5 +24,6 @@ pbmc <- CreateSeuratObject(counts = pbmc.data, project = "SC", min.cells = 3, mi
 # pbmc[["percent.mt"]] <- PercentageFeatureSet(pbmc, pattern = "^MT-")
 
 # Visualize QC metrics as a violin plot
-plot(VlnPlot(pbmc, features = c("nFeature_RNA", "nCount_RNA", "percent.mt"), ncol = 3))
+# plot(VlnPlot(pbmc, features = c("nFeature_RNA", "nCount_RNA", "percent.mt"), ncol = 3))
+plot(VlnPlot(pbmc, features = c("nFeature_RNA", "nCount_RNA"), ncol = 2))
 ```
