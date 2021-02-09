@@ -125,3 +125,5 @@ plot(JackStrawPlot(pbmc, dims = 1:15))
 plot(ElbowPlot(pbmc))
 ```
 
+![](https://github.com/knightsUCF/SingleCellAnalysis/blob/main/images/ElbowPlot.png)
+
