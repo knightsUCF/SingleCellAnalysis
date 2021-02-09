@@ -1,6 +1,6 @@
 # Overview
 
-Single cell analysis aims to analyze the frequency significance of gene groups in a single cell. In the case of a cell injury, we can detect which genes seem significant in the regeneration process.
+Single cell analysis aims to analyze the frequency of gene groups in a cell. In the case of a cell injury, we can detect which genes seem significant in the regeneration process.
 
 The following data and methods are based on the research paper:
 
