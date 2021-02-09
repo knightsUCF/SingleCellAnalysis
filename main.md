@@ -127,3 +127,11 @@ plot(ElbowPlot(pbmc))
 
 ![](https://github.com/knightsUCF/SingleCellAnalysis/blob/main/images/ElbowPlot.png)
 
+
+<h3>Clustering</h3>
+
+```R
+pbmc <- FindNeighbors(pbmc, dims = 1:10)
+pbmc <- FindClusters(pbmc, resolution = 0.5)
+```
+
