@@ -30,3 +30,17 @@ plot(VlnPlot(pbmc, features = c("nFeature_RNA", "nCount_RNA"), ncol = 2))
 
 ![](https://github.com/knightsUCF/SingleCellAnalysis/blob/main/images/QCMetrics.png)
 
+```R
+# FeatureScatter is typically used to visualize feature-feature relationships, but can be used
+# for anything calculated by the object, i.e. columns in object metadata, PC scores etc.
+
+# plot1 <- FeatureScatter(pbmc, feature1 = "nCount_RNA", feature2 = "percent.mt")
+plot2 <- FeatureScatter(pbmc, feature1 = "nCount_RNA", feature2 = "nFeature_RNA")
+# plot(plot1 + plot2)
+
+plot(plot2)
+```
+
+
+
+
