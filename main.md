@@ -119,6 +119,9 @@ plot(JackStrawPlot(pbmc, dims = 1:15))
 ![](https://github.com/knightsUCF/SingleCellAnalysis/blob/main/images/Dimensionality.png)
 
 
+<h3>Elbow Plot</h3>
 
-
+```R
+plot(ElbowPlot(pbmc))
+```
 
