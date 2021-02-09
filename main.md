@@ -116,6 +116,9 @@ pbmc <- ScoreJackStraw(pbmc, dims = 1:20)
 plot(JackStrawPlot(pbmc, dims = 1:15))
 ```
 
+![](https://github.com/knightsUCF/SingleCellAnalysis/blob/main/images/Dimensionality.png)
+
+
 
 
 
