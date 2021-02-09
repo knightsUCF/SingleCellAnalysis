@@ -105,5 +105,7 @@ Negative:  Pcolce, Bgn, Smoc2, Gpc3, Fbln1
 plot(DimPlot(pbmc, reduction = "pca"))
 ```
 
+![](https://github.com/knightsUCF/SingleCellAnalysis/blob/main/images/pca.png)
+
 
 
