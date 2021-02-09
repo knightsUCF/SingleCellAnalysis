@@ -237,7 +237,9 @@ plot(VlnPlot(pbmc, features = c("Esam", "Tm4sf1"), slot = "counts", log = TRUE))
 
 
 ```R
-plot(FeaturePlot(pbmc, features = c("Esam", "Ly6c1", "Egfl7", "Flt1", "Cd81", "C1ql1", "Cspg5", "Dlgap1", "Smoc2")))
+plot(FeaturePlot(pbmc, features = c("Esam", "Vwa1", "Egfl7", "Flt1", "Cd81", "C1ql1", "Cspg5", "Dlgap1", "Smoc2")))
 ```
+
+
 
 
