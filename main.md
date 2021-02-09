@@ -278,3 +278,4 @@ pbmc <- RenameIdents(pbmc, new.cluster.ids)
 plot(DimPlot(pbmc, reduction = "umap", label = TRUE, pt.size = 0.5) + NoLegend())
 ```
 
+![](https://github.com/knightsUCF/SingleCellAnalysis/blob/main/images/Clusters.png)
