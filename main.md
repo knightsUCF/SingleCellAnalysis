@@ -27,3 +27,6 @@ pbmc <- CreateSeuratObject(counts = pbmc.data, project = "SC", min.cells = 3, mi
 # plot(VlnPlot(pbmc, features = c("nFeature_RNA", "nCount_RNA", "percent.mt"), ncol = 3))
 plot(VlnPlot(pbmc, features = c("nFeature_RNA", "nCount_RNA"), ncol = 2))
 ```
+
+![](https://github.com/knightsUCF/SingleCellAnalysis/blob/main/images/QCMetrics.png)
+
