@@ -250,3 +250,29 @@ plot(DoHeatmap(pbmc, features = top10$gene) + NoLegend())
 ![](https://github.com/knightsUCF/SingleCellAnalysis/blob/main/images/Heatmap.png)
 
 
+<h3>Assigning cell type identity to clusters</h3>
+
+"Fortunately in the case of this dataset, we can use canonical markers to easily match the unbiased clustering to known cell types:"
+
+TODO: change this
+
+Cluster ID	Markers	Cell Type
+
+0	IL7R, CCR7	Naive CD4+ T
+
+1	CD14, LYZ	CD14+ Mono
+
+2	IL7R, S100A4	Memory CD4+
+
+3	MS4A1	B
+
+4	CD8A	CD8+ T
+
+5	FCGR3A, MS4A7	FCGR3A+ Mono
+
+6	GNLY, NKG7	NK
+
+7	FCER1A, CST3	DC
+
+8	PPBP	Platelet
+
