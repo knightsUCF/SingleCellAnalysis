@@ -242,6 +242,9 @@ plot(FeaturePlot(pbmc, features = c("Esam", "Vwa1", "Egfl7", "Flt1", "Cd81", "C1
 
 ![](https://github.com/knightsUCF/SingleCellAnalysis/blob/main/images/FeaturePlot.png)
 
-
+```R
+top10 <- pbmc.markers %>% group_by(cluster) %>% top_n(n = 10, wt = avg_log2FC)
+plot(DoHeatmap(pbmc, features = top10$gene) + NoLegend())
+```
 
 
