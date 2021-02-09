@@ -226,4 +226,7 @@ cluster1.markers <- FindMarkers(pbmc, ident.1 = 0, logfc.threshold = 0.25, test.
 plot(VlnPlot(pbmc, features = c("Esam", "Tm4sf1")))
 ```
 
+![](https://github.com/knightsUCF/SingleCellAnalysis/blob/main/images/ClusterExpression.png)
+
+
 
