@@ -65,6 +65,9 @@ plot4 <- LabelPoints(plot = plot1, points = top10, repel = TRUE)
 plot(plot3 + plot4)
 ```
 
+![](https://github.com/knightsUCF/SingleCellAnalysis/blob/main/images/HighlyVariableFeatures.png)
+
+
 
 
 
