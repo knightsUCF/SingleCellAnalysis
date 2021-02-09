@@ -163,3 +163,20 @@ plot(DimPlot(pbmc, reduction = "umap"))
 
 ![](https://github.com/knightsUCF/SingleCellAnalysis/blob/main/images/UMAP.png)
 
+<h3>Finding differentially expressed features (cluster biomarkers)</h3>
+
+```R
+# find all markers of cluster 1
+cluster1.markers <- FindMarkers(pbmc, ident.1 = 2, min.pct = 0.25)
+print(head(cluster1.markers, n = 5))
+
+output
+
+               p_val avg_log2FC pct.1 pct.2    p_val_adj
+Esam    1.279957e-59   3.595577 0.933 0.042 1.611209e-55
+Adgrl4  6.386108e-59   2.659595 0.867 0.018 8.038833e-55
+Tmem252 8.195863e-58   3.703981 0.883 0.028 1.031695e-53
+Vwa1    5.332391e-56   3.521792 0.900 0.046 6.712414e-52
+Egfl7   5.689981e-56   3.957891 0.983 0.092 7.162548e-52
+```
+
