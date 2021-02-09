@@ -232,3 +232,5 @@ plot(VlnPlot(pbmc, features = c("Esam", "Tm4sf1")))
 # we can plot raw counts as well
 plot(VlnPlot(pbmc, features = c("Esam", "Tm4sf1"), slot = "counts", log = TRUE))
 ```
+
+![](https://github.com/knightsUCF/SingleCellAnalysis/blob/main/images/RawCounts.png)
