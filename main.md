@@ -234,3 +234,10 @@ plot(VlnPlot(pbmc, features = c("Esam", "Tm4sf1"), slot = "counts", log = TRUE))
 ```
 
 ![](https://github.com/knightsUCF/SingleCellAnalysis/blob/main/images/RawCounts.png)
+
+
+```R
+plot(FeaturePlot(pbmc, features = c("Esam", "Ly6c1", "Egfl7", "Flt1", "Cd81", "C1ql1", "Cspg5", "Dlgap1", "Smoc2")))
+```
+
+
