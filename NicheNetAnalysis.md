@@ -1,4 +1,4 @@
-# NicheNet
+
 
 <h3>What NicheNet Can Predict</h3>
 
@@ -6,7 +6,7 @@
 
 2) which specific target genes are affected by which of these predicted ligands
 
-# Dependencies
+<h3>Dependencies</h3>
 
 ```R
 library(nichenetr)
