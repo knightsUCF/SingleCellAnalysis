@@ -18,3 +18,6 @@
 
 ![](https://github.com/knightsUCF/SingleCellAnalysis/blob/main/images/sender%20receiver.png)
 
+<h3>Defining Gene Set of Interest</h3>
+
+<i>"These are the genes in the “receiver/target” cell population that are potentially affected by ligands expressed by interacting cells</i>
