@@ -13,7 +13,7 @@
 
 ![](https://github.com/knightsUCF/SingleCellAnalysis/blob/main/images/cell%20types2.png)
 
-<h3> Sender: CD8 T Receiver: "B", "CD14+ Mono", "Memory CD4 T"</h3>
+<h3> Sender: "CD8 T" / Receiver: "B", "CD14+ Mono", "Memory CD4 T"</h3>
 
 
 ![](https://github.com/knightsUCF/SingleCellAnalysis/blob/main/images/sender%20receiver.png)
