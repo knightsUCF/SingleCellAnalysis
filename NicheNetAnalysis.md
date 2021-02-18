@@ -11,5 +11,5 @@
 
 
 
-![](https://github.com/knightsUCF/SingleCellAnalysis/blob/main/images/cell%20types.png)
+![](https://github.com/knightsUCF/SingleCellAnalysis/blob/main/images/cell%20types2.png)
 
