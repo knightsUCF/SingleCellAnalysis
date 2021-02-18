@@ -10,6 +10,6 @@
 <h3>Cell Types Post Cluster Analysis</h3>
 
 
-[](https://github.com/knightsUCF/SingleCellAnalysis/blob/main/images/cell%20types.png)
+![](https://github.com/knightsUCF/SingleCellAnalysis/blob/main/images/cell%20types.png)
 
 
