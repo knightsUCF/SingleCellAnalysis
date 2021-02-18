@@ -6,3 +6,12 @@
 
 2) which specific target genes are affected by which of these predicted ligands
 
+# Dependencies
+
+```
+R
+library(nichenetr)
+library(Seurat) # please update to Seurat V4
+library(tidyverse)
+```
+
