@@ -8,8 +8,7 @@
 
 # Dependencies
 
-```
-R
+```R
 library(nichenetr)
 library(Seurat) # please update to Seurat V4
 library(tidyverse)
