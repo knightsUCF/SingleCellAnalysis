@@ -6,4 +6,3 @@
 
 2) which specific target genes are affected by which of these predicted ligands
 
-<i>Check that the research paper already filtered out the ligands: So, you need to have a clear set of genes that are putatively affected by ligands from one of more interacting cells.</i>
